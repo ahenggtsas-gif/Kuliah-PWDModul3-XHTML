@@ -1,0 +1,110 @@
+/* 
+    Standar Urutan Penulisan : 
+1. Layout & Posisi (display, position, float, width, height)
+2. Box Model (margin, border, padding)
+3. Visual / Warna (background-color, box-shadow, opacity)
+4. Tipografi & Lainnya (font-family, color, text-align) 
+*/
+
+
+body{
+    background-color: rgb(0, 16, 62);
+    font-family: 'Times New Roman', Times, serif;
+    color: #111111;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+h1{
+    text-align: justify;
+    color: #02214b;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+h2{
+    text-align: justify;
+    color: #3840b1;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.form-container{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(194, 135, 9);
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(rgb(32, 31, 31), 0.5);
+}
+
+/* idk random things i guess */
+table tr td{
+    padding: 12px 8px;
+    border: none;
+    border-bottom: 2px solid #9a5c00;
+}
+
+/* Align element secara vertikal */
+.top-align{
+    vertical-align: top;
+    padding-top: 15px !important /* dapet dari AI yeahhh baru tau */
+}
+
+/* tanda koma (,) ini punya arti "Lakukan styling ini ke SEMUA ELEMEN ini" 
+ini biar ga nulis kebanyakan. Hubungannya peer-peer, bukan parent-child*/
+/*Biar font dan kotak input dan selectnya bagus*/
+input[type="text"], select, textarea{
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit; /*intinya ngikut ajah*/
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+
+/*Efek interaktif pas kotak input diklik / fokus */
+input[type="text"]:focus, select:focus, textarea:focus{
+    outline: 1px 1px #3b82f6;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(60, 60, 60, 0.25);
+}
+
+.checkbox-group label, .radio-group label{
+    margin-right: 20px;
+    font-weight: bold;
+    cursor:crosshair; /*i thought this would be hilarious LOL*/
+}
+
+.submit-cell{
+    text-align: center;
+    padding-top: 25px !important;
+}
+
+input[type="submit"]{
+    background-color: #082a74;
+    color: #ffffff;
+    border: none;
+    padding: 8px, 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: background-color 0.5 ease, transform 0.2 ease;
+}
+
+input[type="submit"]:hover{
+    background-color: bisque;
+    transform: translateY(-3px);
+}
+
+#footer{
+    text-align: left;
+    font-size: 9;
+    border-top: 1px gold;
+    margin-top: 20px;
+    margin-bottom:5px;
+    color: #111111;
+}

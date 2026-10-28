@@ -1,0 +1,116 @@
+/*
+Note : CSS2 dibantu dengan AI, terutama pemilihan warnanya biar ganteng. CSS1 tidak pakai
+*/
+
+body {
+    background-color: #0b0f19; /* Bcakground biru gelap pekat biar mewah cui */
+    font-family: 'Times New Roman', Times, serif; /* Kesan classic & mewah */
+    color: #e2e8f0;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #f3e5ab; /* Warna Emas Utama */
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: #d4af37; /* Warna Emas Klasik (Metallic Gold) */
+    font-size: 20px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 8px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Mengubah form menjadi bentuk card */
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #121826; /* Panel gelap senada */
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.25); /* Garis tepi tipis yang warnanya emas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.05);
+}
+
+/* Styling Tabel Form */
+table tr td {
+    padding: 12px 10px;
+    border: none; /* Ngehapus border tabel bawaan yang jelek */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Garis pemisah super tipis */
+}
+
+/* Align element secara vertikal */
+.top-align {
+    vertical-align: top;
+    padding-top: 15px !important;
+}
+
+/* Kotak Input, select, textarea bernuansa gelap emas */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: #1a2233;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #f8fafc;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Kotak input, select, textarea diberikan effect highlight emas dengan shadow juga biar ada keliatan transisi*/
+input[type="text"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.checkbox-group label, .radio-group label {
+    margin-right: 20px;
+    font-weight: normal;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.submit-cell {
+    text-align: center;
+    padding-top: 30px !important;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); /* Gradasi emas */
+    color: #0b0f19;
+    border: none;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    margin-top: 30px;
+    padding-top: 15px;
+    color: #94a3b8;
+}
